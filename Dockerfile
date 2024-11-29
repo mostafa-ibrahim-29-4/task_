@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY test.java .
 
-RUN javac test.java
+RUN javac Test.java
 
 EXPOSE 8080
 
