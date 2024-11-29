@@ -2,9 +2,9 @@ FROM openjdk:11-jdk
 
 WORKDIR /app
 
-COPY Test.java .
+COPY test.java .
 
-RUN javac Test.java
+RUN javac test.java
 
 EXPOSE 8080
 
