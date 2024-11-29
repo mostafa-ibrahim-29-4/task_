@@ -8,4 +8,4 @@ RUN javac test.java
 
 EXPOSE 8080
 
-CMD ["java", "test"]
+CMD ["java", "Test"]
