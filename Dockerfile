@@ -1,11 +1,4 @@
-FROM openjdk:17-jdk
+FROM php:8.0-apache
 
-WORKDIR /app
-
-COPY test.java .
-
-RUN javac Test.java
-
-EXPOSE 8080
-
-CMD ["java", "Test"]
+COPY index.php /var/www/html/
+RUN chown www-data:www-data /var/www/html/index.php
