@@ -1,10 +1,10 @@
-FROM openjdk:17-jdk
+FROM openjdk:11-jdk
 
 WORKDIR /app
 
-COPY test.java .
+COPY Test.java .
 
-RUN javac test.java
+RUN javac Test.java
 
 EXPOSE 8080
 
